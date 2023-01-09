@@ -8,6 +8,6 @@ endif
 
 call skeletons#RegisterSkeletons(g:skeletons_dir)
 
-if !g:skeletons_autoregister
+if g:skeletons_autoregister
     autocmd BufNewFile * call skeletons#InsertSkeleton()
 endif
