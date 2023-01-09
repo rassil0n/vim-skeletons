@@ -10,16 +10,17 @@ Installation
 
 For installation I recommend using vim-plug, a package manager for VIM plugins.
 If you have vim-plug running, the following line in your
-``.vimrc``/``.config/init.vim`` enables the
-plugin::
+``.vimrc``/``.config/init.vim`` enables the plugin
 
-    Plug "rassil0n/vim-skeletons"
+```vim
+Plug "rassil0n/vim-skeletons"
+```
 
 Now you run
 
-::
-
+```vim
     :PlugInstall
+```
 
 and you're done.
 
@@ -35,9 +36,9 @@ Usage
 Using Skeletons is easy. Just install the plugin and put your skeleton files
 into
 
-::
-
+```
     ~/.config/nvim/extra/skeletons/
+```
 
 a skeleton file name must follow the simple format ``whatever.<ft>`` where
 ``<ft>`` is the file type you want to register the skeleton for. If you have
@@ -54,9 +55,12 @@ Configuration
 You can influence the bahavior of Skeletons by two confiuguration variables:
 
 ``g:skeletons_dir``
-    Set this variable to a different directory if you don't want to have your
-    skeletons to be located in ``~/.config/nvim/extra/skeletons/``.
+
+Set this variable to a different directory if you don't want to have your
+skeletons to be located in ``~/.config/nvim/extra/skeletons/``.
+
 ``g:skeletons_autoregister``
-    Set this to ``0`` in order to avoid Skeletons to auto-register its
-    autocommand for inserting the skeletons. You need to do this action
-    yourself then.
+
+Set this to ``0`` in order to avoid Skeletons to auto-register its
+autocommand for inserting the skeletons. You need to do this action
+yourself then.
