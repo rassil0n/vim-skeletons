@@ -3,28 +3,23 @@ VIM Skeletons
 =============
 
 This tiny VIM Skeletons plugin allows you to define a skeleton file per file
-type, which is used whenever you create a new file of that type. Furthermore,
-it makes use of UltiSnips__ snippet engine to directly leave you with
-placeholder you can jump through and prefill with sensible defaults.
-
-__ https://github.com/SirVer/ultisnips
+type, which is used whenever you create a new file of that type.
 
 Installation
 ------------
 
-For installation I recommend using Vundle__, a package manager for VIM plugins.
-If you have Vundle running, the following line in your ``.vimrc`` enables the
+For installation I recommend using vim-plug, a package manager for VIM plugins.
+If you have vim-plug running, the following line in your
+``.vimrc``/``.config/init.vim`` enables the
 plugin::
 
-    Bundle "tobyS/skeletons.vim"
-
-__ https://github.com/gmarik/vundle
+    Plug "rassil0n/vim-skeletons"
 
 Now you run
 
 ::
 
-    :BundleInstall
+    :PlugInstall
 
 and you're done.
 
@@ -42,7 +37,7 @@ into
 
 ::
 
-    ~/.vim/skeletons/
+    ~/.config/nvim/extra/skeletons/
 
 a skeleton file name must follow the simple format ``whatever.<ft>`` where
 ``<ft>`` is the file type you want to register the skeleton for. If you have
@@ -60,16 +55,8 @@ You can influence the bahavior of Skeletons by two confiuguration variables:
 
 ``g:skeletons_dir``
     Set this variable to a different directory if you don't want to have your
-    skeletons to be located in ``~/.vim/skeletons/``.
+    skeletons to be located in ``~/.config/nvim/extra/skeletons/``.
 ``g:skeletons_autoregister``
-    Set this to ``1`` in order to avoid Skeletons to auto-register its
+    Set this to ``0`` in order to avoid Skeletons to auto-register its
     autocommand for inserting the skeletons. You need to do this action
     yourself then.
-
-
-..
-   Local Variables:
-   mode: rst
-   fill-column: 79
-   End: 
-   vim: et syn=rst tw=79
