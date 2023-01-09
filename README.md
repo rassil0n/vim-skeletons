@@ -36,7 +36,7 @@ Using Skeletons is easy. Just install the plugin and put your skeleton files
 into
 
 ```
-    ~/.config/nvim/extra/skeletons/
+~/.config/nvim/extra/skeletons/
 ```
 
 a skeleton file name must follow the simple format ``sekeleton.<ft>`` where

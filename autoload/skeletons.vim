@@ -21,6 +21,8 @@ func! skeletons#InsertSkeleton()
     endif
 
     let l:snippet = join(readfile(s:skeletons[l:filetype]), "\n")
+	put = l:snippet
+	exe "startinsert"
 
 endfunc
 
