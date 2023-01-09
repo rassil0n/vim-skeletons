@@ -1,5 +1,5 @@
 if !exists("g:skeletons_dir")
-    let g:skeletons_dir = $HOME . "/.vim/skeletons"
+    let g:skeletons_dir = $HOME . "/.config/nvim/extra/skeletons"
 endif
 
 if !exists("g:skeletons_autoregister")
@@ -8,6 +8,6 @@ endif
 
 call skeletons#RegisterSkeletons(g:skeletons_dir)
 
-if g:skeletons_autoregister
+if !g:skeletons_autoregister
     autocmd BufNewFile * call skeletons#InsertSkeleton()
 endif
