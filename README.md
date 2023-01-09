@@ -1,4 +1,3 @@
-=============
 VIM Skeletons
 =============
 
@@ -10,7 +9,7 @@ Installation
 
 For installation I recommend using vim-plug, a package manager for VIM plugins.
 If you have vim-plug running, the following line in your
-``.vimrc``/``.config/init.vim`` enables the plugin
+``.vimrc`` or ``.config/init.vim`` enables the plugin
 
 ```vim
 Plug "rassil0n/vim-skeletons"
@@ -19,7 +18,7 @@ Plug "rassil0n/vim-skeletons"
 Now you run
 
 ```vim
-    :PlugInstall
+:PlugInstall
 ```
 
 and you're done.
@@ -27,8 +26,8 @@ and you're done.
 If you prefer any other VIM plugin manager, you will find your way according to
 your preferences. If you do not use a VIM plugin manager, you should use one.
 
-I ship an example skeleton for your pleasure. Take a look in the ``skeletons/``
-directory. Note, that this skeleton will not be used by Skeletons by default.
+I ship an example skeleton for your pleasure. Take a look in the ``extra/skeletons``
+directory. Note, that this skeleton will not be used by the plugin by default.
 
 Usage
 -----
@@ -40,14 +39,7 @@ into
     ~/.config/nvim/extra/skeletons/
 ```
 
-a skeleton file name must follow the simple format ``whatever.<ft>`` where
-``<ft>`` is the file type you want to register the skeleton for. If you have
-mutliple files for one type, Skeletons will simply use one. Which one? No idea.
-Therefore I recommend to use ``skeleton.<ft>`` by convention to avoid this
-issue.
-
-If you want to change the directory where skeletons are stored, take a look at
-`Configuration`_.
+a skeleton file name must follow the simple format ``sekeleton.<ft>`` where
 
 Configuration
 -------------
